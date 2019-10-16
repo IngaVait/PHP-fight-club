@@ -1,27 +1,34 @@
 <?php
-$months = 12;
-$wallet = 1000;
-$month_income = 700;
+$days = 365;
+//$cigs_mon_fri = rand(3, 5);
+//$cigs_sat = rand(20, 40);
+//$cigs_sun = rand(1, 3);
+$pack_price = 3.5;
+$count_mon_fri = 0;
+$count_sat = 0;
+$count_sun = 0;
 
-for ($i = 1; $i < $months; $i++) {
-    $wallet += $month_income - rand(500, 1000);
-    if ($wallet < 0) {
-        break;
+for ($i = 1; $i <= $days; $i++) {
+    $strtotime_param = "+$i days";
+    $number = date("N", strtotime($strtotime_param));
+    if ($number <= 5) {
+        $count_mon_fri += rand(3, 5);
+    } elseif ($number == 6) {
+        $count_sat += rand(20, 40);
+    } else {
+        $count_sun += rand(1, 3);
     }
 }
+$h1 = 'Tavo rukymo statistika';
+$count = $count_mon_fri + $count_sat + $count_sun;
+$money = $count / 20 * 3.5;
 
-$h1 = 'Wallet Forecast';
-
-if ($wallet < 0) {
-    $h2 = "Atsargiai, $i menesi gali baigtis pinigai";
-} else{
-    $h2 = "Po $months menesiu prognozuojamas likutis: $wallet";
-}
+$h2 = "per $days surukysiu $count cigareciu uz $money eur.";
 ?>
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Wallet Forecast</title>
+        <title>Kiek tu surukai</title>
     </head>
     <body>
         <h1><?php print $h1; ?></h1>
