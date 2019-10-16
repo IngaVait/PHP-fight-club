@@ -20,11 +20,12 @@ for ($i = 1; $i <= $days; $i++) {
         $count_sun += rand(1, 3);
     }
 }
-$h1 = 'Tavo rukymo statistika';
+$h1 = 'Tavo rūkymo statistika';
 $count = $count_mon_fri + $count_sat + $count_sun;
 $money = ceil($count / 20) * $pack_price;
-$count_time = $count * $time_per_cig;
-$h2 = "per $days dienas būsi prastovėjęs lauke $count_time minučių. <br> Ir ne tik surūkęs $count vnt. cigarečių, bet ir dūmais paleidęs $money eur.";
+$count_min = $count * $time_per_cig;
+$count_time = intdiv($count_min, 60).':'. ($count_min % 60);
+$h2 = "Jei ir toliau rūkysi taip pat, per ateinančias $days dienas būsi prastovėjęs lauke $count_time valandų. <br> Ir ne tik surūkęs $count vnt. cigarečių, bet ir dūmais paleidęs $money eur.";
 ?>
 <!doctype html>
 <html lang="en">
