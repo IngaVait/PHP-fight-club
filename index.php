@@ -8,7 +8,7 @@ for ($i = 1; $i <= $months; $i++) {
     $car_price_after = ceil($car_price_after - $car_price_after * 0.02);
 }
 
-$depr_perc = $car_price_after * 100 / $car_price_new;
+$depr_perc = 100 - $car_price_after * 100 / $car_price_new;
 $h1 = 'Kiek nuvertes masina';
 $h2 = "Naujos masinos kaina $car_price_new eur.";
 $h3 = "Po $months menesiu, masinos verte bus: $car_price_after eur.";
