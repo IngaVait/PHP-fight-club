@@ -1,13 +1,11 @@
 <?php
 $petrol_in_tank = rand(20, 30);
-$diesel_in_tank = 0;
 
-for ($diesel_in_tank = 0; $diesel_in_tank <= ($petrol_in_tank + $diesel_in_tank) / 10; $diesel_in_tank+=0.5) {
-    }
+for($diesel_limit = 0; ($petrol_in_tank + $diesel_limit + 1) * 0.1 > $diesel_limit; $diesel_limit++) 
 
 $h1 = 'Pripylei dyzelio į benz. mašiną?';
 $h2 = "Benzino buvo: $petrol_in_tank";
-$h3 = "Max dyzelio riba: $diesel_in_tank";
+$h3 = "Max dyzelio riba: $diesel_limit";
 ?>
 <!doctype html>
 <html lang="en">
