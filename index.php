@@ -1,3 +1,3 @@
 <?php
-$array = [kiausinis, baklazanas, obuolys];
+$array = ['kiausinis', 'baklazanas', 'obuolys'];
 var_dump($array);
