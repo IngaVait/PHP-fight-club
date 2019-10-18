@@ -3,17 +3,17 @@ $array = [
     [
         'owner' => 'Petras Pizdžius',
         'thing' => 'phone',
-        'status' => 'prapistas',
+        'status' => [],
     ],
     [
         'owner' => 'Tomas Ablomas',
         'thing' => 'buljonas',
-        'status' => 'In use',
+        'status' => '1',
     ],
     [
         'owner' => 'Ana Shitkova',
         'thing' => 'rulonas',
-        'status' => 'ended',
+        'status' => '0',
     ],
 ];
     
