@@ -20,7 +20,6 @@ $array = [
         [
             'owner' => 'Ana Shitkova',
             'thing' => 'rulonas',
-            'status' => '0',
         ],
     ],
 ];
