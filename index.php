@@ -8,7 +8,7 @@ $array = [
     [
         'owner' => 'Tomas Ablomas',
         'thing' => 'buljonas',
-        'status' => 'In use',
+        'status' => 'naudojamas',
     ],
     [
         'owner' => 'Ana Shitkova',
