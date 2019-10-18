@@ -1,19 +1,19 @@
 <?php
 $array = [
     [
-        "name" => 'kiausiniai',
-        "quant" => 2,
-        "size" => 'big',
+        'owner' => 'Petras Pizdžius',
+        'thing' => 'phone',
+        'status' => 'prapistas',
     ],
     [
-        "name" => 'baklazanas',
-        "quant" => 1,
-        "size" => 'small',
+        'owner' => 'Tomas Ablomas',
+        'thing' => 'buljonas',
+        'status' => 'In use',
     ],
     [
-        "name" => 'grietine',
-        "quant" => 1,
-        "size" => 'big',
+        'owner' => 'Ana Shitkova',
+        'thing' => 'rulonas',
+        'status' => 'ended',
     ],
 ];
     
