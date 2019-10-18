@@ -13,7 +13,7 @@ $array = [
     [
         'owner' => 'Ana Shitkova',
         'thing' => 'rulonas',
-        'status' => 'ended',
+        'status' => 'pasibaiges',
     ],
 ];
     
