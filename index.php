@@ -1,20 +1,28 @@
 <?php
+
 $array = [
     [
-        'owner' => 'Petras Pizdžius',
-        'thing' => 'phone',
-        'status' => [],
+        'prapistas' =>
+        [
+            'owner' => 'Petras Pizdžius',
+            'thing' => 'phone',
+        ],
     ],
     [
-        'owner' => 'Tomas Ablomas',
-        'thing' => 'buljonas',
-        'status' => '1',
+        'naudojamas' =>
+        [
+            'owner' => 'Tomas Ablomas',
+            'thing' => 'buljonas',
+        ],
     ],
     [
-        'owner' => 'Ana Shitkova',
-        'thing' => 'rulonas',
-        'status' => '0',
+        'pasibaiges' =>
+        [
+            'owner' => 'Ana Shitkova',
+            'thing' => 'rulonas',
+            'status' => '0',
+        ],
     ],
 ];
-    
+
 var_dump($array);
