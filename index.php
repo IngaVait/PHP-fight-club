@@ -1,40 +1,23 @@
 <?php
-$array = [  
-    'top_lane' => [
-        [
-            'name' => 'Kiausiniai',
-            'quantity' => 3,
+
+$array = [
+    'lane_1st' => [
+        'Pins_standing' => [
+            'Row_1' => 1,
+            'Row_2' => [0, 1],
+            'Row_3' => [0, 0, 1],
+            'Row_4' => [1, 0, 0, 1],
         ],
-        [
-            'name' => 'Grietine',
-            'quantity' => 1,
-        ],
-        [
-            'name' => 'Jogurtas',
-            'quantity' => 2,
-        ],
-        [
-            'name' => 'Zuvis',
-            'quantity' => 0,
-        ],
+        'Status' => 'ready',
     ],
-    'bottom_lane' => [
-        [
-            'name' => 'Pienas',
-            'quantity' => 1,
+    'lane_2st' => [
+        'Pins_standing' => [
+            'Row_1' => 0,
+            'Row_2' => [0, 0],
+            'Row_3' => [0, 0, 0],
+            'Row_4' => [0, 0, 0, 0],
         ],
-        [
-            'name' => 'Kefyras',
-            'quantity' => 0,
-        ],
-        [
-            'name' => 'Degtine',
-            'quantity' => 2,
-        ],
-        [
-            'name' => 'Kecupas',
-            'quantity' => 2,
-        ],
+        'Status' => 'not_ready',
     ],
 ];
 var_dump($array);
