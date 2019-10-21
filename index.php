@@ -1,13 +1,24 @@
 <?php
 
-$led_matrix = [
-    [1, 1, 1, 1, 1, 1, 1, 1],
-    [1, 2, 2, 2, 2, 2, 2, 1],
-    [1, 2, 3, 3, 3, 3, 2, 1],
-    [1, 2, 3, 2, 2, 3, 2, 1],
-    [1, 2, 3, 2, 2, 3, 2, 1],
-    [1, 2, 3, 3, 3, 3, 2, 1],
-    [1, 2, 2, 2, 2, 2, 2, 1],
-    [1, 1, 1, 1, 1, 1, 1, 1],
+$bad_panda = [
+    'participant' => [
+        'me' => false,
+        'patricia' => false,
+        "panda_head" => true,
+    ],
+    'place' => 'sidewalk',
+    'position' => 'siting',
+    'mood' => [
+        'party' => 'over',
+        'game' => 'over',
+        'life' => 'sucks',
+    ],
+    'motivation_used' => [
+        'cat_imgs' => 0,
+        'friends' => 0,
+        'vodka' => 2,
+    ],
+    'lessons_learned' => false,
 ];
-var_dump($led_matrix);
+var_dump($bad_panda);
+    
