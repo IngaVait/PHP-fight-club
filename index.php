@@ -1,6 +1,9 @@
 <?php
 
 $race_track = [
+    'start' => [
+        'straight_after' => 500,
+    ],    
     'corner_1' => [
         'right_side' => true,
         'angle' => 5,
@@ -8,7 +11,7 @@ $race_track = [
     ],
       'corner_0' => [
         'right_side' => false,
-        'angle' => 2.5,
+        'angle' => 3,
         'straight_after' => 5,
     ],
       'corner_3' => [
@@ -29,7 +32,10 @@ $race_track = [
     'corner_6' => [
         'right_side' => true,
         'angle' => 3,
-        'straight_after' => 900,
+        'straight_after' => 200,
     ],
+    'finish' => [
+        'end_of_lap' => true,
+    ]
  ];
  var_dump($race_track);
