@@ -17,11 +17,12 @@ $friend_memories = [
     'games',
     'no memories'
 ];
-$rand = rand(0, count($my_memories)-1);
+$rand = rand(0, count($my_memories) - 1);
 $fb_text = $my_memories[$rand];
 
 $h1 = 'Kas buvo penktadieni?!';
-$h2 = 'Ingos prisiminimai';
+$h2_1 = 'Ingos prisiminimai';
+$h2_2 = 'Draugo prisiminimai';
 $h3 = "Flashback $rand: $fb_text.";
 ?>
 <!doctype html>
@@ -31,11 +32,16 @@ $h3 = "Flashback $rand: $fb_text.";
     </head>
     <body>
         <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
+        <h2><?php print $h2_1; ?></h2>
         <ul><?php foreach ($my_memories as $memory) : ?>
                 <li><?php print $memory; ?></li>
             <?php endforeach; ?>
         </ul>
         <h3><?php print $h3; ?></h3>
+        <h2><?php print $h2_2; ?></h2>
+        <ul><?php foreach ($friend_memories as $memory) : ?>
+                <li><?php print $memory; ?></li>
+            <?php endforeach; ?>
+        </ul>
     </body>
 </html>
