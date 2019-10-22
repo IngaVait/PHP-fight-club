@@ -8,13 +8,12 @@ $my_memories = [
     'games',
     'awesome memories'
 ];
+$rand = rand(0, count($my_memories)-1);
+$fb_text = $my_memories[$rand];
+
 $h1 = 'Kas buvo penktadieni?!';
 $h2 = 'Ingos prisiminimai';
-
-$count = count($my_memories);
-$rand = rand(0, $count-1);
-$fb_text = $my_memories[$rand];
-$h3 = " Flashback $rand: $fb_text.";
+$h3 = "Flashback $rand: $fb_text.";
 ?>
 <!doctype html>
 <html lang = "en">
