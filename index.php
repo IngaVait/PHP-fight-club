@@ -12,7 +12,7 @@ $h1 = 'Kas buvo penktadieni?!';
 $h2 = 'Ingos prisiminimai';
 
 $count = count($my_memories);
-$rand = rand(0, $count);
+$rand = rand(0, $count-1);
 $fb_text = $my_memories[$rand];
 $h3 = " Flashback $rand: $fb_text.";
 ?>
