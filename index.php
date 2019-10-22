@@ -8,6 +8,15 @@ $my_memories = [
     'games',
     'awesome memories'
 ];
+$friend_memories = [
+    'taxi',
+    'baras',
+    'gin tonic',
+    'beer',
+    'shots',
+    'games',
+    'no memories'
+];
 $rand = rand(0, count($my_memories)-1);
 $fb_text = $my_memories[$rand];
 
