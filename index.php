@@ -1,24 +1,15 @@
 <?php
 
-$bad_panda = [
-    'participant' => [
-        'me' => false,
-        'patricia' => false,
-        "panda_head" => true,
+$my_memories = [
+    'taxi' => false,
+    'baby_driver' => true,
+    'baras' => true,
+    'gerimai' => [
+        'gin_tonic' => 5,
+        'water' => 'Fuck no!',
+        'shots' => 'Fuck yea!',
     ],
-    'place' => 'sidewalk',
-    'position' => 'siting',
-    'mood' => [
-        'party' => 'over',
-        'game' => 'over',
-        'life' => 'sucks',
-    ],
-    'motivation_used' => [
-        'cat_imgs' => 0,
-        'friends' => 0,
-        'vodka' => 2,
-    ],
-    'lessons_learned' => false,
+    'games' => true,
+    'awesome_memories' => true,
 ];
-var_dump($bad_panda);
-    
+var_dump($my_memories);
