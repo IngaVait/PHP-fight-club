@@ -25,6 +25,11 @@ $drinks = [
         'img' => 'https://www.barbora.lt/api/Images/GetInventoryImage?id=2730c47b-a87f-4418-b33e-2f56865a86f0',
     ],
 ];
+
+foreach ($drinks as $key => $value) {
+$drinks[$key]['price_retail'] = $drinks[$key]['price_stock'] - $drinks[$key]['price_stock']*$drinks[$key]['discount']*0.01;
+}
+
 var_dump($drinks);
 ?>
 <html>
