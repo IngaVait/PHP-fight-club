@@ -1,61 +1,37 @@
 <?php
-$my_memories = [
-    'baby driver',
-    'baras',
-    'gin tonic',
-    'no water',
-    'shots',
-    'games',
-    'awesome'
+$drinks = [
+    [
+        'name' => 'Hendricks Gin',
+        'price_stock' => 29,
+        'discount' => 5,
+        'img' => 'https://www.barbora.lt/api/Images/GetInventoryImage?id=5588df69-950b-4f4f-946f-045bf16b81fe',
+    ],
+     [
+        'name' => 'Viskis Jack Daniels',
+        'price_stock' => 24,
+        'discount' => 5,
+        'img' => 'https://www.barbora.lt/api/Images/GetInventoryImage?id=a0786b83-0e1c-47a8-b99b-77a9d3b6a73f',
+    ],
+     [
+        'name' => 'Viskis Jameson',
+        'price_stock' => 19,
+        'discount' => 10,
+        'img' => 'https://www.barbora.lt/api/Images/GetInventoryImage?id=9a2fff2d-336b-4ab9-a229-79da012da5a8',
+    ],
+     [
+        'name' => 'Romas Bacardi Dark',
+        'price_stock' => 14,
+        'discount' => 8,
+        'img' => 'https://www.barbora.lt/api/Images/GetInventoryImage?id=2730c47b-a87f-4418-b33e-2f56865a86f0',
+    ],
 ];
-
-$friend_memories = [
-    'taxi',
-    'baras',
-    'gin tonic',
-    'beer',
-    'shots',
-    'games',
-    'no memories'
-];
-
-foreach ($my_memories as $single_memory) {
-    if(in_array($single_memory, $friend_memories, true)){
-      $common_memories[]= $single_memory;
-    }
-}
-
-$rand = rand(0, count($my_memories) - 1);
-$fb_text = $my_memories[$rand];
-
-$h1 = 'Kas buvo penktadieni?!';
-$h2_1 = 'Ingos prisiminimai';
-$h2_2 = 'Draugo prisiminimai';
-$h2_3 = 'Vienodi prisiminimai';
-$h3 = "Flashback $rand: $fb_text.";
+var_dump($drinks);
 ?>
-<!doctype html>
-<html lang="en">
+<html>
     <head>
-        <title> Penktadienio memories </title>
+        <title>Gerimai</title>
     </head>
     <body>
-        <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2_1; ?></h2>
-        <ul><?php foreach ($my_memories as $memory) : ?>
-                <li><?php print $memory; ?></li>
-            <?php endforeach; ?>
-        </ul>
-        <h3><?php print $h3; ?></h3>
-        <h2><?php print $h2_2; ?></h2>
-        <ul><?php foreach ($friend_memories as $memory) : ?>
-                <li><?php print $memory; ?></li>
-            <?php endforeach; ?>
-        </ul>
-        <h2><?php print $h2_3; ?></h2>
-        <ul><?php foreach ($common_memories as $memory) : ?>
-                <li><?php print $memory; ?></li>
-            <?php endforeach; ?>
-        </ul>
+       
     </body>
 </html>
