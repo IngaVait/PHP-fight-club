@@ -43,29 +43,39 @@ $h1 = 'Drink Catalogue';
                 justify-content: space-around;
             }
             .card {
-                height: 300px;
+                height: 350px;
                 width: 300px;
-            }
-            .flex_wrap {
-                height: 95%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
+                border: 1px solid black;
+
             }
             .price {
                 color: white;
                 background: red;
                 text-align: right;
+                width: 20%;
+                height: 20px;
+            }
+            .price_right {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .flex_wrap {
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
             }
             .name {
                 font-size: 2rem;
             }
             img {
-                height: 100%;
+                height: 80%;
                 width: auto;
             }
-
         </style>
     </head>
     <body>
@@ -73,10 +83,10 @@ $h1 = 'Drink Catalogue';
         <div class="container">
             <?php foreach ($drinks as $drink_index => $drink) : ?>
                 <div class="card">
-                    <div class="price"><?php print $drinks[$drink_index]['price_retail']; ?></div>
+                    <div class="price_right"><p class="price"><?php print $drinks[$drink_index]['price_retail']; ?></p></div>
                     <div class="flex_wrap">
-                    <img src="<?php print $drinks[$drink_index]['img']; ?>">
-                    <div class="name"><?php print $drinks[$drink_index]['name']; ?></div>
+                        <img src="<?php print $drinks[$drink_index]['img']; ?>">
+                        <div class="name"><?php print $drinks[$drink_index]['name']; ?></div>
                     </div>
                 </div>
             <?php endforeach; ?>
